@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorfulPages</title>
+<style>
+    .flex-container {
+        display: flex;
+        height: 300px;
+        padding: 5px;
+    }
+    .flex-item {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        font-size: 20px;
+        color: whitesmoke;
+    }
+</style>
+</head>
+<body>
+    <div class = "flex-container" id = "flex-container">
+        <div class="flex-item" id="item1">Item 1</div>
+        <div class="flex-item" id="item2">Item 2</div>
+        <div class="flex-item" id="item3">Item 3</div>
+    </div>
+
+    <script>
+        let container = document.querySelector('#flex-container');
+        container.style.backgroundColor = '#f0f0f0';
+        container.style.border = '6px solid #222';
+        container.style.borderRadius = '2px';
+
+        let item1 = document.querySelector('#item1');
+        item1.style.backgroundColor = '#FF2181';
+        item1.style.border = '5px solid #400';
+        item1.style.borderRadius = '2px';
+
+        let item2 = document.querySelector('#item2')
+        item2.style.backgroundColor = '#23D135';
+        item2.style.border = '5px solid #200';
+        item2.style.borderRadius = '2px';
+
+        let item3 = document.querySelector('#item3')
+        item3.style.backgroundColor = '#11E5FF';
+        item3.style.border = '5px solid #400';
+        item3.style.borderRadius = '2px';
+    </script>
+</body>
+</html>
